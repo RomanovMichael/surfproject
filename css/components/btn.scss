@@ -1,0 +1,32 @@
+.btn {
+    font-size: 16px;
+    padding: 21px 41px;
+    border-radius: 100px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: none;
+
+    &--theme--yellow {
+        background: #FEDB3F;
+        color: #000000;
+        transition: 0.3s;
+        &:hover{
+            background: #000000;
+            color: #FEDB3F;
+            transition: 0.3s;
+        }
+    }
+
+    &--theme--transparent{
+        background: transparent;
+        color: #FFFFFF;
+        text-transform: none;
+        font-weight: normal;
+        cursor: pointer;
+
+        &:hover {
+            color: #FEDB3F;
+        }
+    }
+}

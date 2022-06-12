@@ -1,0 +1,55 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+}
+
+address {
+    font-style: normal;
+}
+
+.contacts__address {
+    font-size: 21px;
+
+}
+
+.phone-number--footer {
+    font-weight: normal;
+}
+
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+
+    &--icon--vk .socials__link {
+        background: url(../../img/socials/vk.svg);
+
+    }
+    
+    &--icon--fb .socials__link{
+        background: url(../../img/socials/fbhover.svg);
+    }
+
+
+    &--icon--insta .socials__link {
+        background: url(../../img/socials/in.svg);
+    }
+
+    &--icon--tv .socials__link {
+        background: url(../../img/socials/tv.svg);
+    }
+}
+.socials__link {
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    background: center center / no-repeat;
+}

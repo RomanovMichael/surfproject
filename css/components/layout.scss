@@ -1,0 +1,80 @@
+
+html, 
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Alegreya Sans', Helvetica, sans-serif;
+	font-size: $baseFontsize;
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	min-width: $containerWidth + 20px;
+
+}
+.container {
+	margin: 0 auto;
+	width: $containerWidth;
+}
+
+ * {
+	box-sizing: border-box;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style: none;
+	}
+	
+}
+// tag styles reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	
+}
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+
+
+}
+
+
+

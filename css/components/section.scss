@@ -1,0 +1,16 @@
+.section {
+    height: 100vh;
+    min-height: 652px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.section__title {
+    color: $black;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center;
+}
