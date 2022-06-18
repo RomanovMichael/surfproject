@@ -8,7 +8,11 @@
     @include tablets {
         background: url(../../img/bgs/herobg.png) right 10% bottom / cover no-repeat;
         background-color: #1968B1;
-        
+    }
+
+    @include phones {
+        background: url(../../img/bgs/herobg.png) right 30% bottom / cover no-repeat;
+        background-color: #1968B1;
     }
 }
 
@@ -47,11 +51,22 @@
     line-height: 1.1em;
     text-transform: uppercase;
     margin-bottom: 0.944rem;
+
+    @include phones {
+        font-size: rem(40px);
+    }
+    @include smallscreen {
+        font-size: rem(30px);
+    }
 }
 
 .hero__title-desc {
     font-size: 1.166rem;
     margin-bottom: 2.166rem;
+
+    @include smallscreen {
+        font-size: rem(18px);
+    }
 }
 .hero__icon-section {
     @include tablets {

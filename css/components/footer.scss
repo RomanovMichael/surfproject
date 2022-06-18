@@ -2,7 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: rem(86px);
+    min-height: rem(86px);
+
+    @include phones {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5% 0;
+    }
 }
 
 address {
@@ -16,6 +22,10 @@ address {
 
 .phone-number--footer {
     font-weight: normal;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 
@@ -47,8 +57,8 @@ address {
     }
 }
 .socials__link {
-    width: rem(20px);
-    height: rem(20px);
+    width: 20px;
+    height: 20px;
     display: block;
     text-decoration: none;
     background: center center / no-repeat;

@@ -6,6 +6,10 @@
 
 .headline__title {
     margin-bottom: rem(17px);
+
+    @include phones {
+        margin-bottom: rem(9px);
+    }
 }
 .headline__subtitle{
     color: $body;
@@ -14,5 +18,9 @@
 
     @include tablets {
         padding: 0 21%;
+    }
+
+    @include phones {
+        padding: 0 6%;
     }
 }

@@ -14,3 +14,10 @@
         @content;
     }
 }
+
+@mixin smallscreen {
+    @media (max-width: $smallscreen) {
+       
+        @content;
+    }
+}

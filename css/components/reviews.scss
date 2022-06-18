@@ -8,6 +8,10 @@
     @include tablets {
      padding: rem(56px) rem(24px) rem(42px);
     }
+
+    @include phones {
+        padding: rem(56px) rem(24px) rem(30px);
+    }
 }
 
 .reviews__display-inner {
@@ -51,11 +55,23 @@
     font-weight: bold;
     color: $black;
     margin-bottom: rem(14px);
+
+    @include phones {
+        margin-bottom: rem(12px);
+    }
 }
 .reviews__text{
     color:$body;
     margin-bottom: rem(24px);
     max-width: 100%;
+
+    @include tablets {
+        margin-bottom: rem(16px);
+    }
+
+    @include phones {
+        margin-bottom: rem(12px);
+    }
 }
 
 .reviews__author{
