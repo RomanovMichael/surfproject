@@ -11,7 +11,7 @@
     &:before {
         content:url("../../img/decor/Combined\ shape\ 2203.png");
         position: absolute;
-        top: 52px;
+        top: rem(52px);
         right: 0;
         transform: translateX(50%);
     }

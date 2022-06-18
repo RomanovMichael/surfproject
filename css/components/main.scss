@@ -1,12 +1,24 @@
 $containerWidth: 940px;
 $baseFontsize: 18px;
 
+// breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 // colors
 $black: #292929;
 $body: #666666;
 
 //z-indexes
 $z-fixed-menu:100;
+
+
+
+//adaptive
+@import "media";
+
+
 
 
 // normalize
@@ -20,6 +32,8 @@ $z-fixed-menu:100;
 
 @import "hero";
 @import "header";
+@import "hamburger";
+
 @import "features";
 @import "feature";
 @import "btn";
@@ -35,3 +49,4 @@ $z-fixed-menu:100;
 @import "fixed-menu";
 @import "map-section";
 @import "footer";
+@import "hamburger";

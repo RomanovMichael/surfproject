@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 86px;
+    height: rem(86px);
 }
 
 address {
@@ -10,7 +10,7 @@ address {
 }
 
 .contacts__address {
-    font-size: 21px;
+    font-size: rem(21px);
 
 }
 
@@ -22,10 +22,10 @@ address {
 .socials__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 14px;
+    margin-right: rem(14px);
 
     &:last-child{
-        margin-right: 0px;
+        margin-right: rem(0px);
     }
 
     &--icon--vk .socials__link {
@@ -47,8 +47,8 @@ address {
     }
 }
 .socials__link {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     display: block;
     text-decoration: none;
     background: center center / no-repeat;

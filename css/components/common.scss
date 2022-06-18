@@ -1,0 +1,15 @@
+
+
+@media ( max-width: 768px) {
+
+    html {font-size: rem(17px);}
+    .container {max-width: rem(450px);}
+    .hero__icon-section {display: none;}
+    .hero__title-section {
+        width: 100%; }
+
+    .hero__main-title {
+        width: 100%;
+        text-align: center;
+    }
+}

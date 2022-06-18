@@ -5,4 +5,9 @@
     .section__title {
         color: inherit;
     }
+
+    @include tablets {
+        padding: 18% 0;
+    }
 }
+ 

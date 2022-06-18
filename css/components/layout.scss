@@ -1,12 +1,22 @@
+html {
+	font-size: $baseFontsize;
 
+	@include tablets {
+		font-size: $baseFontsize - 1px;
+	}
+
+	@include phones {
+		font-size: $baseFontsize - 2px;
+	}
+}
 html, 
 body {
 	height: 100%;
+
 }
 
 body {
 	font-family: 'Alegreya Sans', Helvetica, sans-serif;
-	font-size: $baseFontsize;
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -17,12 +27,14 @@ body {
 	position: relative;
 	min-height: 100%;
 	overflow: hidden;
-	min-width: $containerWidth + 20px;
+	width: 100%;
 
 }
 .container {
 	margin: 0 auto;
-	width: $containerWidth;
+	width: 95%;
+	max-width: $containerWidth;
+	position: relative;
 }
 
  * {
