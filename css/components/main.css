@@ -221,6 +221,12 @@ img {
   }
 }
 
+.logo__img {
+  width: 3.1111111111rem;
+  height: 2.2222222222rem;
+  fill: #fff;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,6 +286,7 @@ img {
   margin-right: 0.333rem;
   min-width: 13px;
   min-height: 13px;
+  fill: #ffffff;
 }
 
 .hamburger {
@@ -335,6 +342,11 @@ img {
   width: 1.9444444444rem;
   margin-right: 0.7777777778rem;
 }
+.feature__icon-elem {
+  width: 1.9444444444rem;
+  height: 1.9444444444rem;
+  fill: #fff;
+}
 
 .feature__text {
   font-size: 0.8888888889rem;
@@ -359,8 +371,8 @@ img {
   transition: 0.3s;
 }
 .btn--theme--yellow:hover {
-  background: #000000;
-  color: #FEDB3F;
+  background: #FFD517;
+  color: #000000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -534,6 +546,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: #000000;
 }
 
 .benefit__title {
@@ -952,6 +965,10 @@ address {
   }
 }
 
+.phone-number__icon-elem---footer {
+  fill: #292929;
+}
+
 .socials__item {
   display: inline-block;
   vertical-align: middle;
@@ -960,18 +977,6 @@ address {
 .socials__item:last-child {
   margin-right: 0rem;
 }
-.socials__item--icon--vk .socials__link {
-  background: url(../../img/socials/vk.svg);
-}
-.socials__item--icon--fb .socials__link {
-  background: url(../../img/socials/fbhover.svg);
-}
-.socials__item--icon--insta .socials__link {
-  background: url(../../img/socials/in.svg);
-}
-.socials__item--icon--tv .socials__link {
-  background: url(../../img/socials/tv.svg);
-}
 
 .socials__link {
   width: 20px;
@@ -979,6 +984,19 @@ address {
   display: block;
   text-decoration: none;
   background: center center/no-repeat;
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.socials__icon:hover {
+  fill: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hamburger {

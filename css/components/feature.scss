@@ -6,7 +6,14 @@
 .feature__icon {
     width: rem(35px);
     margin-right: rem(14px);
+
+    &-elem {
+        width: rem(35px);
+        height: rem(35px);
+        fill: #fff;
+    }
 }
+
 
 .feature__text {
     font-size: rem(16px);
@@ -14,3 +21,5 @@
     max-width: rem(90px);
     line-height: rem(18px);
 }
+
+

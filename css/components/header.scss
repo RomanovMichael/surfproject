@@ -16,6 +16,11 @@
    
 }
 
+.logo__img {
+    width: rem(56px);
+    height: rem(40px);
+    fill: #fff;
+}
 
 .menu__list {
     display: flex;
@@ -70,6 +75,5 @@
     margin-right: 0.333rem;
     min-width: 13px;
     min-height: 13px;
-    
-    
+    fill: #ffffff;
 }

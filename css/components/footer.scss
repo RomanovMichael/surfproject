@@ -29,6 +29,10 @@ address {
 }
 
 
+.phone-number__icon-elem---footer {
+     fill: $black;
+}
+
 .socials__item {
     display: inline-block;
     vertical-align: middle;
@@ -38,23 +42,6 @@ address {
         margin-right: rem(0px);
     }
 
-    &--icon--vk .socials__link {
-        background: url(../../img/socials/vk.svg);
-
-    }
-    
-    &--icon--fb .socials__link{
-        background: url(../../img/socials/fbhover.svg);
-    }
-
-
-    &--icon--insta .socials__link {
-        background: url(../../img/socials/in.svg);
-    }
-
-    &--icon--tv .socials__link {
-        background: url(../../img/socials/tv.svg);
-    }
 }
 .socials__link {
     width: 20px;
@@ -62,4 +49,17 @@ address {
     display: block;
     text-decoration: none;
     background: center center / no-repeat;
+}
+
+
+.socials__icon{
+    width: 20px;
+    height: 20px;
+    fill: #B3B3B3;
+    transition: 0.3s;
+
+    &:hover {
+        fill: #000000;
+        transition: 0.3s;
+    }
 }
