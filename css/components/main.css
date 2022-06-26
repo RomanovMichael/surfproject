@@ -1029,6 +1029,11 @@ address {
 .products__section {
   background-color: #F8FAF9;
 }
+@media screen and (max-width: 768px) {
+  .products__section {
+    padding-top: 4.4444444444rem;
+  }
+}
 
 .products {
   width: 100%;
@@ -1041,6 +1046,7 @@ address {
   width: 100%;
 }
 .products-slider__arrow {
+  display: block;
   position: absolute;
   top: 35%;
   width: 13px;
@@ -1049,8 +1055,32 @@ address {
 .products-slider__arrow--direction--prev {
   left: 0;
 }
+@media screen and (max-width: 768px) {
+  .products-slider__arrow--direction--prev {
+    left: calc(26% - 90px);
+    top: 26%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-slider__arrow--direction--prev {
+    left: 0%;
+    top: 22%;
+  }
+}
 .products-slider__arrow--direction--next {
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .products-slider__arrow--direction--next {
+    right: calc(26% - 90px);
+    top: 26%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-slider__arrow--direction--next {
+    right: 0%;
+    top: 22%;
+  }
 }
 .products-slider__arrow-icon {
   width: 13px;
@@ -1085,29 +1115,27 @@ address {
 }
 
 .product__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 27.25rem;
-  width: 100%;
-  min-width: 22rem;
-  height: min(330px, 50vw);
+  margin-right: 3rem;
+  width: 22.2222222222rem;
+  height: 30rem;
   background: url(../../img/bgs/productsbg.png) center center/contain no-repeat;
+}
+.product__image-elem {
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .product__image {
-    max-width: 19.125rem;
+    margin-right: 0;
+    width: 19.4444444444rem;
+    height: 24.4444444444rem;
   }
 }
-.product__image-elem {
-  height: 154%;
-  width: 75%;
+@media screen and (max-width: 480px) {
+  .product__image {
+    width: 14rem;
+    height: 18.4444444444rem;
+  }
 }
 
 .product__content {
@@ -1123,15 +1151,16 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translateY(-12%);
-          transform: translateY(-12%);
+  -webkit-transform: translateY(-7%);
+          transform: translateY(-7%);
   min-height: 25.25rem;
 }
 @media screen and (max-width: 768px) {
   .product__content {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 31.44444rem;
   }
 }
 .product__content-text {
@@ -1148,17 +1177,41 @@ address {
           justify-content: space-between;
   line-height: 1.1875rem;
 }
+@media screen and (max-width: 768px) {
+  .product__content-text {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .product__title {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .product__title {
+    text-align: center;
+  }
+}
 
 .product__desc {
   color: #666666;
   max-width: 23rem;
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .product__desc {
+    text-align: center;
+    max-width: 28rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__desc {
+    max-width: 21rem;
+  }
 }
 
 .product__features {
@@ -1169,6 +1222,26 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .product__features {
+    margin-left: 2.1111111111rem;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product__feature:first-child {
+    margin-right: 2.3333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__feature:first-child {
+    margin-right: 1.7777777778rem;
+  }
 }
 
 .product__feature-title {
@@ -1195,6 +1268,16 @@ address {
   font-size: 3.3333333333rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+@media screen and (max-width: 768px) {
+  .product__price {
+    margin-right: 1.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__price {
+    margin-right: 1.1111111111rem;
+  }
 }
 
 .product__dropdown {

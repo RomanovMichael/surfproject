@@ -1,5 +1,10 @@
 .products__section {
     background-color: #F8FAF9;
+
+    @include tablets{
+
+        padding-top: rem(80px);
+    }
 }
 .products {
     width: 100%;
@@ -12,28 +17,48 @@
 
 
     &-slider__arrow{
+        display: block;
         position: absolute;
         top: 35%;
         width: 13px;
         height: 27px;
 
+
         &--direction--prev {
             left: 0;
+            @include tablets {
+                left:  calc(26% - 90px);
+                top: 26%;
+            }
+
+            @include phones{
+                left: 0%;
+                top: 22%;
+            }
+            
         }
 
         &--direction--next {
             right: 0;
+            @include tablets {
+                right:  calc(26% - 90px);
+                top: 26%;
+            }
+
+            @include phones {
+                right: 0%;
+                top: 22%;
+            }
         }
 
-        
-            &-icon {
-                width: 13px;
-                height: 27px;
+        &-icon {
+            width: 13px;
+            height: 27px;
 
-                
-        
-            }
-        
+            
+    
+        }
+            
     }
 
 
