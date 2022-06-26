@@ -1,5 +1,9 @@
 
-
+.reviews__section{
+    @include tablets {
+        padding: 8rem 0;
+    }
+}
 .reviews__display {
     background: #F8FAF9;
     padding: rem(42px);

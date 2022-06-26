@@ -566,6 +566,12 @@ img {
   color: #666666;
 }
 
+@media screen and (max-width: 768px) {
+  .reviews__section {
+    padding: 8rem 0;
+  }
+}
+
 .reviews__display {
   background: #F8FAF9;
   padding: 2.3333333333rem;
