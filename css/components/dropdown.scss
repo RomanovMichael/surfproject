@@ -1,0 +1,97 @@
+.product__dropdown {
+    cursor: pointer;
+    position: relative;
+    width: rem(91px);
+    height: rem(91px);
+
+        @include tablets {
+            display: none;
+        }
+
+        &:hover .product__dropdown-menu {
+            display: block;
+        }
+        
+        &-elem {
+            width: rem(91px);
+            height: rem(91px);
+            fill: #3A587E;
+
+            &:hover {
+                fill: #3465A3;
+            }
+            
+        }
+
+
+        &-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(34%);
+        width: rem(273px);
+        height: rem(291px);
+        background:rgba(255, 255, 255, 0.8) ;
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+        font-size: rem(16px);
+        border-radius: rem(5px);
+        padding: 1.5rem 1.5625rem 1.875rem 1.625rem;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: rem(91px);
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            
+
+        }
+       
+    }
+
+
+    &-list {
+        width: 100%;
+        height: 100%;
+       
+ 
+    }
+    &-body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+   
+
+    &-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+    &-title {
+        font-weight: 700;
+        flex: 1;
+        
+    }
+    &-value {
+        text-align: right;
+    }
+    &-icon{
+        width: rem(32px);
+        height: rem(32px);
+        display: flex;
+        justify-content: center;
+        margin-right: 0.5rem;
+        
+        
+       
+          
+    }
+
+}

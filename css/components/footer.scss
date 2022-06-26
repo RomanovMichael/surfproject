@@ -44,8 +44,8 @@ address {
 
 }
 .socials__link {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     display: block;
     text-decoration: none;
     background: center center / no-repeat;
@@ -53,8 +53,8 @@ address {
 
 
 .socials__icon{
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: #B3B3B3;
     transition: 0.3s;
 

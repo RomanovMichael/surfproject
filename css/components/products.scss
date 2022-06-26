@@ -1,0 +1,44 @@
+.products__section {
+    background-color: #F8FAF9;
+}
+.products {
+    width: 100%;
+
+    &-slider {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }   
+
+
+    &-slider__arrow{
+        position: absolute;
+        top: 35%;
+        width: 13px;
+        height: 27px;
+
+        &--direction--prev {
+            left: 0;
+        }
+
+        &--direction--next {
+            right: 0;
+        }
+
+        
+            &-icon {
+                width: 13px;
+                height: 27px;
+
+                
+        
+            }
+        
+    }
+
+
+
+    &__item {
+        width: 100%;
+    }
+}
