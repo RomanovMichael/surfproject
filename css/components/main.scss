@@ -6,6 +6,7 @@ $baseFontsize: 18px;
 $tablets: 768px;
 $phones: 480px;
 $smallscreen: 390px;
+$team: 942px;
 
 // colors
 $black: #292929;
@@ -55,3 +56,5 @@ $z-fixed-menu:100;
 @import "product";
 @import "dropdown";
 @import "verticalmenu";
+@import "team";
+@import "team__player";

@@ -16,9 +16,11 @@
             width: rem(91px);
             height: rem(91px);
             fill: #3A587E;
+            transition: 0.3s;
 
             &:hover {
                 fill: #3465A3;
+                transition: 0.3s;
             }
             
         }
@@ -46,7 +48,7 @@
             top: 0;
             left: 0;
             transform: translateX(-100%);
-            
+
 
         }
        

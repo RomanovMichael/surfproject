@@ -21,3 +21,10 @@
         @content;
     }
 }
+
+@mixin team {
+    @media (max-width: $team) {
+        @content;
+        
+    }
+}

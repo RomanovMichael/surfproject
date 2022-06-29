@@ -1302,9 +1302,13 @@ address {
   width: 5.0555555556rem;
   height: 5.0555555556rem;
   fill: #3A587E;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .product__dropdown-elem:hover {
   fill: #3465A3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .product__dropdown-menu {
   display: none;
@@ -1446,4 +1450,82 @@ address {
   width: 20px;
   height: 20px;
   fill: white;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__item {
+  max-width: 12.2222222222rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 942px) {
+  .team_list :nth-child(3) {
+    display: none;
+  }
+}
+
+.team__player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team__player-image {
+  margin-bottom: 1.3333333333rem;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.team__player-text {
+  text-align: center;
+  padding-top: 0.4444444444rem;
+  display: none;
+}
+.team__player-link {
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.team__player-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 42%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  border: 0.2222222222rem solid transparent;
+  border-top: 0.3333333333rem solid #292929;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.team__player-link--active::after {
+  -webkit-transform: translate(100%, -42%) rotate(180deg);
+          transform: translate(100%, -42%) rotate(180deg);
+}
+.team__player-desc {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.2rem;
 }

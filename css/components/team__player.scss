@@ -1,0 +1,61 @@
+.team__player{
+    display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  
+
+    &-image {
+        margin-bottom: rem(24px);
+        order: -1;
+    }
+
+    &-text {
+    text-align: center;
+    padding-top: rem(8px);
+    display: none;
+    
+    }
+
+
+    &-link{
+        font-weight: bold;
+        font-size: rem(18px);
+        position: relative;
+        transition: 0.3s;
+        
+        
+        
+        &::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 42%;
+            transform:translateX(100%);
+            border: rem(4px) solid transparent;
+            border-top: rem(6px) solid $black;
+            transition: transform .3s;
+        
+                
+        }
+
+        &--active::after{
+            transform:translate(100%, -42%) rotate(180deg);
+          
+       
+          }
+            
+        
+    
+    }
+
+    &-desc  {
+        font-size: rem(18px);
+        color:  $body;
+        line-height: rem(21.6px);
+        
+    
+    }
+}
+

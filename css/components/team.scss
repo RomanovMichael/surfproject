@@ -1,0 +1,22 @@
+.team__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+
+.team__item {
+    max-width:rem(220px);
+    flex: 1;
+  
+}
+.team_list :nth-child(3) {
+
+
+    @include team {
+
+        display: none;
+
+    }
+}
