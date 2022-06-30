@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon_package_v0.16/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/components/main.css">
     <title>Surfboard | Main Page</title>
 </head>
@@ -193,7 +194,7 @@
                                 <div class="product__container">
                                     <div class="product__image">
 
-                                        <img src="./img/content/products/firstproduct.png"
+                                        <img src="./img/content/products/longboard.svg"
                                             alt="Серфинг борд для начинающих" class="product__image-elem">
                                     </div>
                                     <div class="product__content">
@@ -254,8 +255,8 @@
                                             </div>
 
                                         </div>
+                                        <h3 class="product__title">Лонгборд 2.0</h3>
                                         <div class="product__content-text">
-                                            <h3 class="product__title">Лонгборд 2.0</h3>
 
                                             <div class="product__desc">
                                                 <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
@@ -280,6 +281,104 @@
 
                                             <div class="product__order">
                                                 <div class="product__price">7000 ₽</div>
+                                                <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="products__item product">
+                                <div class="product__container">
+                                    <div class="product__image">
+
+                                        <img src="./img/content/products/shortboard.svg"
+                                            alt="Серфинг борд для профессионалов" class="product__image-elem">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__dropdown">
+                                            <svg class="product__dropdown-elem">
+                                                <use xlink:href="./sprite.svg#click"></use>
+                                            </svg>
+                                            <div class="product__dropdown-menu">
+                                                <table class="product__dropdown-list">
+                                                    <tbody class="product__dropdown-body">
+                                                        <tr class="product__dropdown-row">
+                                                            <td class="product__dropdown-icon">
+                                                                <svg class="">
+                                                                    <use xlink:href="./sprite.svg#length"></use>
+                                                                </svg>
+                                                            </td>
+                                                            <td class="product__dropdown-title">Длина доски</td>
+                                                            <td class="product__dropdown-value">от 1,5 м</td>
+                                                        </tr>
+                                                        <tr class="product__dropdown-row">
+                                                            <td class="product__dropdown-icon">
+                                                                <svg>
+                                                                    <use xlink:href="./sprite.svg#width"></use>
+                                                                </svg>
+                                                            </td>
+                                                            <td class="product__dropdown-title">Ширина доски</td>
+                                                            <td class="product__dropdown-value">от 30 см</td>
+                                                        </tr>
+                                                        <tr class="product__dropdown-row">
+                                                            <td class="product__dropdown-icon">
+                                                                <svg>
+                                                                    <use xlink:href="./sprite.svg#thickness"></use>
+                                                                </svg>
+                                                            </td>
+                                                            <td class="product__dropdown-title">Толщина</td>
+                                                            <td class="product__dropdown-value">8 см</td>
+                                                        </tr>
+                                                        <tr class="product__dropdown-row">
+                                                            <td class="product__dropdown-icon">
+                                                                <svg>
+                                                                    <use xlink:href="./sprite.svg#lifetime"></use>
+                                                                </svg>
+                                                            </td>
+                                                            <td class="product__dropdown-title">Срок службы</td>
+                                                            <td class="product__dropdown-value">5 лет</td>
+                                                        </tr>
+                                                        <tr class="product__dropdown-row">
+                                                            <td class="product__dropdown-icon">
+                                                                <svg>
+                                                                    <use xlink:href="./sprite.svg#weight"></use>
+                                                                </svg>
+                                                            </td>
+                                                            <td class="product__dropdown-title">Вес</td>
+                                                            <td class="product__dropdown-value">7-8 кг</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                        <h3 class="product__title">Шортборд</h3>
+                                        <div class="product__content-text">
+
+                                            <div class="product__desc">
+                                                <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также 
+                                                    катание в трубах.
+                                                    
+                                                </p>
+                                            </div>
+                                            <ul class="product__features">
+                                                <li class="product__feature">
+                                                    <div class="product__feature-title">Длина доски </div>
+                                                    <div class="product__feature-value"><b>от 2,5 метров</b></div>
+                                                </li>
+
+
+                                                <li class="product__feature">
+                                                    <div class="product__feature-title">Ширина доски </div>
+                                                    <div class="product__feature-value"><b>от 40 сантиметров</b></div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="product__order">
+                                                <div class="product__price">12000 ₽</div>
                                                 <a href="#" class="btn btn--theme--yellow">Заказать</a>
                                             </div>
                                         </div>
@@ -609,9 +708,14 @@
             </nav>
         </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="./js/menu.js"></script>
+    <script src="./js/products.js"></script>
     <script src="./js/team.js"></script>
+
 </body>
 
 </html>

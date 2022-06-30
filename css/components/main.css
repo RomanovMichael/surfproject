@@ -1055,6 +1055,7 @@ address {
   top: 35%;
   width: 13px;
   height: 27px;
+  z-index: 9999;
 }
 .products-slider__arrow--direction--prev {
   left: 0;
