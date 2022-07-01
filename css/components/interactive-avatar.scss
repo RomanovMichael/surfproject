@@ -5,7 +5,10 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-
+    
+    &:hover {
+        border-color: #FEDB3F;
+    }
     &--active {
         border-color: #FEDB3F;
     }
