@@ -2,6 +2,25 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    &--desktop--version {
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &--mobile--version {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    
+        @include tablets {
+            display: flex;
+            padding: 0 10%;
+        }
+
+    }   
+
     
 }
 
@@ -9,14 +28,14 @@
 .team__item {
     max-width:rem(220px);
     flex: 1;
+    @include tablets {
+        margin-bottom: rem(16px);
+    }
+
+    @include phones {
+        margin-bottom: rem(8px);
+    }
   
 }
-.team_list :nth-child(3) {
 
 
-    @include team {
-
-        display: none;
-
-    }
-}

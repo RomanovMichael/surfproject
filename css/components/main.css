@@ -1462,6 +1462,29 @@ address {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .team__list--desktop--version {
+    display: none;
+  }
+}
+.team__list--mobile--version {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__list--mobile--version {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10%;
+  }
+}
 
 .team__item {
   max-width: 12.2222222222rem;
@@ -1469,14 +1492,50 @@ address {
       -ms-flex: 1;
           flex: 1;
 }
-
-@media (max-width: 942px) {
-  .team_list :nth-child(3) {
-    display: none;
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-bottom: 0.8888888889rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__item {
+    margin-bottom: 0.4444444444rem;
   }
 }
 
 .team__player {
+  text-align: center;
+  position: relative;
+}
+.team__player-image {
+  margin-bottom: 1.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .team__player-image {
+    margin-bottom: 1.1111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__player-image {
+    width: 7.6666666667rem;
+    height: 10rem;
+  }
+}
+.team__player-text {
+  text-align: center;
+  padding-top: 0.4444444444rem;
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .team__player-text {
+    position: relative;
+  }
+}
+.team__player-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1487,17 +1546,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.team__player-image {
-  margin-bottom: 1.3333333333rem;
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-}
-.team__player-text {
-  text-align: center;
-  padding-top: 0.4444444444rem;
-  display: none;
 }
 .team__player-link {
   font-weight: bold;
@@ -1524,6 +1572,11 @@ address {
 .team__player-link--active::after {
   -webkit-transform: translate(100%, -42%) rotate(180deg);
           transform: translate(100%, -42%) rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+  .team__player-subtitle {
+    font-weight: bold;
+  }
 }
 .team__player-desc {
   font-size: 1rem;
