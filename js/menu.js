@@ -19,7 +19,7 @@ hamburger.addEventListener("click", e => {
     overlay.addEventListener("click", e => {
         e.target == overlay
         document.body.classList.remove("stop-scrolling");
-        document.body.removeChild(overlay);
+        document.querySelectorAll('.overlay').forEach(e => e.remove());
     })
 });
 
