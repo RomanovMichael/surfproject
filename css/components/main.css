@@ -1082,7 +1082,7 @@ address {
   top: 35%;
   width: 13px;
   height: 27px;
-  z-index: 9999;
+  z-index: 999;
 }
 .products-slider__arrow--direction--prev {
   left: 0;
@@ -1414,6 +1414,11 @@ address {
   margin-right: 0.5rem;
 }
 
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .overlay {
   position: fixed;
   z-index: 1000;
@@ -1431,6 +1436,8 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .vertical-menu {
