@@ -66,6 +66,13 @@
             height: rem(82px);
         }
     }
+
+
+}
+
+.form__input.input-error {
+    border-color: red;
+    
 }
 
 .form__controls-wrap {

@@ -27,7 +27,7 @@ $z-fixed-menu:100;
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 // setups
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
 @import "layout";
 
 // components
@@ -58,3 +58,4 @@ $z-fixed-menu:100;
 @import "verticalmenu";
 @import "team";
 @import "team__player";
+@import "modal";

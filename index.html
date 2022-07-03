@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon_package_v0.16/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/components/main.css">
     <title>Surfboard | Main Page</title>
@@ -642,39 +643,40 @@
                 <div class="container">
                     <h3 class="section__title section__title--theme--white">Закажите доcку</h3>
                     <form class="form">
+                        <input type="hidden" name="to" value="somewhere@mail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text"  name="street" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text"  name="home" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="part" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="appartment" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text"  name="floor" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -682,7 +684,7 @@
                             <div class="form__row form__row--textarea">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls-wrap">
@@ -805,6 +807,27 @@
             </li>
         </ul>
     </nav>
+
+
+    <div id="modal" class="modal" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  #313131;
+        display: none;
+        ">
+        <div class="modal__container">
+            <div class="modal__content">Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href="#" class="btn app-submit-btn btn--theme--yellow ">Закрыть</a>
+            </div>
+        </div>
+
+
+    </div>
     <script type="html/template" id="overlay">
             <a href="#" class="close__overlay">
                 <svg>
@@ -837,16 +860,25 @@
                 </ul>
             </nav>
         </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script src="./js/menu.js"></script>
     <script src="./js/products.js"></script>
+    
+    
+    
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/reviews.js"></script>
+    
+    
+    
 
+ 
 </body>
 
 </html>
