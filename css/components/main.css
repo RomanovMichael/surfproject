@@ -1637,6 +1637,7 @@ address {
           align-items: center !important;
   background: #FFFFFF;
   padding: 35px 60px;
+  text-align: center;
 }
 .modal .fancybox-button {
   display: none !important;
