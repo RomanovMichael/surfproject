@@ -952,6 +952,13 @@ img {
   background: url(../../img/bgs/mapbg.png) center center/cover no-repeat;
 }
 
+.map {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1436,7 +1443,6 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   overflow: hidden;
 }
 
