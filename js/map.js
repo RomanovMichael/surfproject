@@ -11,20 +11,23 @@
     });
 
     myMap.behaviors.disable('scrollZoom');
+    //на мобильных устройствах... (проверяем по userAgent браузера)
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    //... отключаем перетаскивание карты
+    myMap.behaviors.disable('drag');
+}
 
-     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
           // Зададим содержимое заголовка балуна.
           balloonContentHeader:
           '<span class="description">Профессиональные доски для серфинга</span>',
       // Зададим содержимое основной части балуна.
       balloonContentBody: '<img src="img/baloon.png" height="200" width="350"> <br/> ' +
-      'Для детей и взрослых<br/>'+
-          '<a href="tel:+78009039090">8 800 903 90 90</a><br/>' + 'Москва, ул.Новый Арбат, д.31/12<br/>' ,
-         
+          '<a href="tel:+78009039090">8 800 903 90 90</a><br/>' + 'Москва, ул.Новый Арбат, д.31/12<br/>' +
+          'Для детей и взрослых<br/>',
       // Зададим содержимое нижней части балуна.
-      balloonContentFooter: '',
-      // Зададим содержимое всплывающей подсказки.
-        hintContent: 'Профессиональные доски для серфинга',
+      balloonContentFooter: '<a href=:"https://romanovmichael.github.io/surfproject/">https://mail.ru</a>'
+
     }, {
           
         iconLayout: 'default#image',
