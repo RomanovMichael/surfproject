@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2de428dc-177b-4ada-8261-24627af9bfa5&lang=ru_RU"
+    type="text/javascript">
+    </script>
     <link rel="stylesheet" href="./css/components/main.css">
     <title>Surfboard | Main Page</title>
 </head>
@@ -639,6 +642,21 @@
                     </div>
                 </div>
             </section>
+
+
+            <section class="section player-section">
+                <div class="container">
+                    <h2 class="section__title">Как мы работаем</h2>
+                    <div class="player-section__container">
+                        <div class="player">
+                            <div class="player__wrapper">
+                                <div id="yt-player" class="player__elem"></div>
+                                <player class="splash__controls"></player>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section order-section">
                 <div class="container">
                     <h3 class="section__title section__title--theme--white">Закажите доcку</h3>
@@ -719,7 +737,7 @@
             </section>
         </div>
         <section class=" section map-section">
-
+            <div id="map"></div>
         </section>
         <footer class="footer-section">
             <div class="container footer-container">
@@ -865,13 +883,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
     
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/products.js"></script>
     
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-    </script>
+    
+   
+    
 
     
-    
+    <script src="./js/products.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/team.js"></script>
