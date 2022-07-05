@@ -20,13 +20,13 @@
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
           // Зададим содержимое заголовка балуна.
           balloonContentHeader:
-          '<span class="description">Профессиональные доски для серфинга</span>',
+          '<span class="description">Профессиональные доски</br> для серфинга</span>',
       // Зададим содержимое основной части балуна.
-      balloonContentBody: '<img src="img/baloon.png" height="200" width="350"> <br/> ' +
+      balloonContentBody: '<img src="img/baloon.png" height="200" width="267"> <br/> ' +
           '<a href="tel:+78009039090">8 800 903 90 90</a><br/>' + 'Москва, ул.Новый Арбат, д.31/12<br/>' +
           'Для детей и взрослых<br/>',
       // Зададим содержимое нижней части балуна.
-      balloonContentFooter: '<a href=:"https://romanovmichael.github.io/surfproject/">https://mail.ru</a>'
+      balloonContentFooter: '<a href=:"https://romanovmichael.github.io/surfproject">romanovmichael.github.io/surfproject</a>'
 
     }, {
           
