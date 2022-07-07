@@ -1,3 +1,4 @@
+// import enableInlineVideo from 'iphone-inline-video';
 
 $(document).ready(function () {
 
@@ -16,6 +17,7 @@ $(document).ready(function () {
     let soundLevel;
 
 
+    // let plugin =  enableInlineVideo(video);
 
     video.addEventListener('timeupdate', function () {
         progressUpdate();
@@ -45,6 +47,7 @@ $(document).ready(function () {
             btn.className = "player__start-pause"
             splash.style.display = "none";
             video.play();
+
         }
         else {
             btn.className = "player__start-play";
