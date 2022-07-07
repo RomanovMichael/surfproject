@@ -405,8 +405,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 12px;
-  height: 16px;
+  width: 1.3333333333rem;
+  height: 1.3333333333rem;
   position: relative;
   display: block;
 }
@@ -429,8 +429,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 0.6666666667rem;
-  height: 0.8888888889rem;
+  width: 1.3333333333rem;
+  height: 1.3333333333rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -438,20 +438,14 @@ img {
     margin-right: 10px;
   }
 }
-.player__start-pause:before, .player__start-pause::after {
-  content: "";
-  display: block;
+.player__start-pause:before {
+  content: url(../../img/player/pause.svg);
   position: absolute;
-  width: 5px;
-  top: 0;
-  bottom: 0;
-  background: white;
-}
-.player__start-pause::after {
-  right: 0;
-}
-.player__start-pause::before {
+  display: block;
   left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 .player progress {
   width: 100%;

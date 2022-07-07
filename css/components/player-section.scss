@@ -85,8 +85,8 @@
         background: transparent;
         border: 0;
         outline: 0;
-        width: 12px;
-        height: 16px;
+        width: rem(24px);
+        height: rem(24px);
         position: relative;
         display: block;
 
@@ -113,34 +113,49 @@
         background: transparent;
         border: 0;
         outline: 0;
-        width: rem(12px);
-        height: rem(16px);
+        width: rem(24px);
+        height: rem(24px);
         position: relative;
+        
 
         @include tablets {
             margin-right: 10px;
         }
 
-        &:before,
-        &::after {
-            content: "";
-            display: block;
+
+
+        &:before {
+            content: url(../../img/player/pause.svg);
             position: absolute;
-            width: 5px;
-            top: 0;
-            bottom: 0;
-            background: #ffff;
-
-        }
-
-        &::after {
-            right: 0;
-        }
-
-        &::before {
+            display: block;
             left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+           
+
 
         }
+        // &:before,
+        // &::after {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     width: 5px;
+        //     top: 0;
+        //     bottom: 0;
+        //     background: #ffff;
+
+        // }
+
+        // &::after {
+        //     right: 0;
+        // }
+
+        // &::before {
+        //     left: 0;
+
+        // }
 
 
     }
