@@ -381,6 +381,11 @@ img {
   padding: 0 1.3888888889rem;
   bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .player__controls {
+    padding-left: 10px;
+  }
+}
 .player__splash {
   position: absolute;
   top: 0;
@@ -405,12 +410,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .player__playback {
-    margin-right: 0.5555555556rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .player__playback {
-    margin-right: 0.8333333333rem;
+    margin-right: 1.1111111111rem;
   }
 }
 .player__playback-button {
@@ -434,7 +434,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .player__start-play {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 }
 .player__start-play:before {
@@ -458,7 +458,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .player__start-pause {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 }
 .player__start-pause:before {
@@ -567,7 +567,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .sound__btn {
-    margin-right: 0.5555555556rem;
+    margin-right: 0.8333333333rem;
   }
 }
 

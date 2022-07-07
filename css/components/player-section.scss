@@ -54,6 +54,10 @@
         padding: 0 rem(25px);
         bottom: 0;
 
+        @include tablets {
+            padding-left: 10px;
+        }
+
 
     }
 
@@ -79,12 +83,10 @@
 
 
         @include tablets {
-            margin-right: rem(10px);
+            margin-right: rem(20px);
         }
 
-        @include phones {
-            margin-right: rem(15px);
-        }
+     
 
 
         &-button {
@@ -112,7 +114,7 @@
         padding: 0;
 
         @include tablets {
-            margin-right: 10px;
+            margin-right: 20px;
         }
 
         &:before {
@@ -141,7 +143,7 @@
         
 
         @include tablets {
-            margin-right: 10px;
+            margin-right: 20px;
         }
 
 
@@ -261,10 +263,11 @@
         cursor: pointer;
         z-index: 2;
         padding: 0;
+
     
 
         @include tablets {
-            margin-right: rem(10px);
+            margin-right: rem(15px);
         }
     }
 }
