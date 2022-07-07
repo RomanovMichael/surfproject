@@ -88,6 +88,7 @@
         width: 12px;
         height: 16px;
         position: relative;
+        display: block;
 
         @include tablets {
             margin-right: 10px;
