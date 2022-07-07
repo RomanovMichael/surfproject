@@ -405,8 +405,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
+  width: 24px;
+  height: 24px;
   position: relative;
   display: block;
 }
@@ -429,8 +429,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
+  width: 24px;
+  height: 24px;
   position: relative;
 }
 @media screen and (max-width: 768px) {
