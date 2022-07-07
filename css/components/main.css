@@ -397,8 +397,8 @@ img {
   position: absolute;
   background-color: #FEDB3F;
   border-radius: 50%;
-  width: 0.7777777778rem;
-  height: 0.7777777778rem;
+  width: 14px;
+  height: 14px;
   display: block;
 }
 .player__start-play {
