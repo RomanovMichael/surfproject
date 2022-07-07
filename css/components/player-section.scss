@@ -222,7 +222,7 @@
     &::before {
         content: "";
         height: 2px;
-        width: 29px;
+        width: 27px;
         background-color: #ffff;
         position: absolute;
         display: block;
@@ -231,12 +231,14 @@
         opacity: 0;
         transition: opacity .3s;
         cursor: pointer;
+        left: -4px;
 
     }
 
     &.active {
         &::before {
             opacity: 1;
+
         }
 
         & .duration__length::-webkit-slider-thumb{

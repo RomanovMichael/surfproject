@@ -506,7 +506,7 @@ img {
 .sound::before {
   content: "";
   height: 2px;
-  width: 29px;
+  width: 27px;
   background-color: white;
   position: absolute;
   display: block;
@@ -517,6 +517,7 @@ img {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   cursor: pointer;
+  left: -4px;
 }
 .sound.active::before {
   opacity: 1;
