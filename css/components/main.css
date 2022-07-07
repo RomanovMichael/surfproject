@@ -399,6 +399,7 @@ img {
   border-radius: 50%;
   width: 0.7777777778rem;
   height: 0.7777777778rem;
+  display: block;
 }
 .player__start-play {
   background: transparent;
@@ -423,6 +424,7 @@ img {
   bottom: 0;
 }
 .player__start-pause {
+  display: block;
   background: transparent;
   border: 0;
   outline: 0;

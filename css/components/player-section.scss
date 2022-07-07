@@ -74,6 +74,7 @@
             border-radius: 50%;
             width: rem(14px);
             height: rem(14px);
+            display: block;
         }
 
 
@@ -107,6 +108,7 @@
     }
 
     &__start-pause {
+        display: block;
         background: transparent;
         border: 0;
         outline: 0;
