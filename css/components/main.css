@@ -540,6 +540,7 @@ img {
   margin-right: 1.1111111111rem;
   cursor: pointer;
   z-index: 2;
+  padding: 0;
 }
 @media screen and (max-width: 768px) {
   .sound__btn {
