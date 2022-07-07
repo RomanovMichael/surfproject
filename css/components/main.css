@@ -397,8 +397,8 @@ img {
   position: absolute;
   background-color: #FEDB3F;
   border-radius: 50%;
-  width: 14px;
-  height: 14px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   display: block;
   padding: 0;
 }
@@ -406,8 +406,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.3333333333rem;
+  height: 1.3333333333rem;
   position: relative;
   display: block;
 }
@@ -430,8 +430,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.3333333333rem;
+  height: 1.3333333333rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
