@@ -68,6 +68,11 @@
             margin-right: rem(10px);
         }
 
+        @include phones {
+            margin-right: rem(15px);
+        }
+
+
         &-button {
             position: absolute;
             background-color: #FEDB3F;
@@ -137,26 +142,7 @@
 
 
         }
-        // &:before,
-        // &::after {
-        //     content: "";
-        //     display: block;
-        //     position: absolute;
-        //     width: 5px;
-        //     top: 0;
-        //     bottom: 0;
-        //     background: #ffff;
-
-        // }
-
-        // &::after {
-        //     right: 0;
-        // }
-
-        // &::before {
-        //     left: 0;
-
-        // }
+      
 
 
     }
@@ -222,7 +208,7 @@
     &::before {
         content: "";
         height: 2px;
-        width: 27px;
+        width: 26px;
         background-color: #ffff;
         position: absolute;
         display: block;

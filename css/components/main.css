@@ -393,6 +393,11 @@ img {
     margin-right: 0.5555555556rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .player__playback {
+    margin-right: 0.8333333333rem;
+  }
+}
 .player__playback-button {
   position: absolute;
   background-color: #FEDB3F;
@@ -506,7 +511,7 @@ img {
 .sound::before {
   content: "";
   height: 2px;
-  width: 27px;
+  width: 26px;
   background-color: white;
   position: absolute;
   display: block;
