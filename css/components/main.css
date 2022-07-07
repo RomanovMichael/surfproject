@@ -417,8 +417,8 @@ img {
   position: absolute;
   background-color: #FEDB3F;
   border-radius: 50%;
-  width: 0.7777777778rem;
-  height: 0.7777777778rem;
+  width: 14px;
+  height: 14px;
   display: block;
   padding: 0;
 }
@@ -426,8 +426,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
+  width: 24px;
+  height: 24px;
   position: relative;
   display: block;
   padding: 0;
@@ -451,8 +451,8 @@ img {
   background: transparent;
   border: 0;
   outline: 0;
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
+  width: 24px;
+  height: 24px;
   position: relative;
   padding: 0;
 }
@@ -509,8 +509,8 @@ img {
 .duration__length::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
-  height: 0.7777777778rem;
-  width: 0.7777777778rem;
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
   background: #FEDB3F;
   cursor: pointer;

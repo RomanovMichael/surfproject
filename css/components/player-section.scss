@@ -99,8 +99,8 @@
             position: absolute;
             background-color: #FEDB3F;
             border-radius: 50%;
-            width: rem(14px);
-            height: rem(14px);
+            width: 14px;
+            height: 14px;
             display: block;
             padding: 0;
         }
@@ -113,8 +113,8 @@
         background: transparent;
         border: 0;
         outline: 0;
-        width: rem(24px);
-        height: rem(24px);
+        width: 24px;
+        height: 24px;
         position: relative;
         display: block;
         padding: 0;
@@ -142,8 +142,8 @@
         background: transparent;
         border: 0;
         outline: 0;
-        width: rem(24px);
-        height: rem(24px);
+        width: 24px;
+        height: 24px;
         position: relative;
         padding: 0;
         
@@ -217,8 +217,8 @@
 
 .duration__length::-webkit-slider-thumb {
     appearance: none;
-    height: rem(14px);
-    width: rem(14px);
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
     background: #FEDB3F;
     cursor: pointer;
