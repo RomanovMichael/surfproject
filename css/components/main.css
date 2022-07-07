@@ -545,8 +545,6 @@ img {
   margin-right: 1.1111111111rem;
   cursor: pointer;
   z-index: 2;
-  width: 0.7222222222rem;
-  height: 0.8888888889rem;
 }
 @media screen and (max-width: 768px) {
   .sound__btn {
