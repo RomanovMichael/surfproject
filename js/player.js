@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+// $(document).ready(function () {
   
     
     let video = document.querySelector(".video");
@@ -88,6 +88,6 @@ $(document).ready(function () {
             sound.classList.add('active');
         }
     }
-});
+// });
 
 
