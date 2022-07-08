@@ -13,6 +13,13 @@
     margin-bottom: rem(35px);
     text-align: center;
 
+    &--theme--white{
+        color: #ffff;
+        font-size: rem(48px);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
     @include phones {
         font-size: rem(40px);
     }

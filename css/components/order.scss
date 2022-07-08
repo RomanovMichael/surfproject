@@ -2,9 +2,7 @@
     background: url(../../img/bgs/orderbg.png) center center / cover no-repeat;
     color: #FFFFFF;
 
-    .section__title {
-        color: inherit;
-    }
+   
 
     @include tablets {
         padding: 18% 0;
