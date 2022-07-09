@@ -53,7 +53,11 @@
         width: rem(100px);
 
         @include tablets {
-            width: rem(65px);
+            width: rem(90px);
+        }
+
+        @include phones {
+            width: rem(70px);
         }
 
 
@@ -88,13 +92,13 @@
                 font-size: rem(14px);
             }
         }
-    }
+    }   
 
     &__container {
         padding: rem(40px) rem(73px) rem(45px) rem(26px);
 
         @include phones {
-        padding: rem(30px) rem(35px) rem(45px) rem(26px);
+        padding: rem(40px) rem(35px) rem(45px) rem(26px);
         }
     }
 
