@@ -40,7 +40,7 @@ const performTransition = (sectionEq) => {
     if (inScroll) return;
 
 
-    const transitionOver = 1000;
+    const transitionOver = 500;
     const mouseInertiaOver = 300;
 
     inScroll = true;
