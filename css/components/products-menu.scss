@@ -16,8 +16,20 @@
     
     &__section-title {
         position: absolute;
-        top: 109px;
-        left: 84px;
+        top: rem(109px);
+        left: rem(84px);
+
+        @include tablets {
+            top: rem(85px);
+            left: rem(40px); 
+        }
+
+        @include phones {
+            top: rem(76px);
+            left: rem(10px);
+            font-size: rem(40px);
+        }
+        
     }
 
 
@@ -33,7 +45,12 @@
 
     &__title {
         position: relative;
-        width: 100px;
+        width: rem(100px);
+
+        @include tablets {
+            width: rem(90px);
+        }
+
 
     }
 
@@ -41,7 +58,7 @@
         position: absolute;
         left: 50%;
         bottom: 2.125rem;
-        font-size: 48px;
+        font-size: rem(48px);
         font-weight: bold;
         color: #fff;
         transform-origin: 0 50%;
@@ -56,12 +73,12 @@
         width: 0;
 
         &-text {
-            font-size: 16px;
+            font-size: rem(16px);
         }
     }
 
     &__container {
-        padding: 40px 73px 45px 26px;
+        padding: rem(40px) rem(73px) rem(45px) rem(26px);
     }
 
     // &__close {
@@ -79,4 +96,3 @@
     // }
 
 }
-
