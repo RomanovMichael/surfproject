@@ -1926,6 +1926,11 @@ address {
   color: white;
   background: url(../../img/products-menu/mainslide.png) center center/cover no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .products-menu-section {
+    background: url(../../img/products-menu/mainslide.png) right 35% center/cover no-repeat;
+  }
+}
 
 .products-menu {
   position: absolute;
