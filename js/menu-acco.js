@@ -10,19 +10,20 @@ const mesureWidth = item => {
     const paddingLeft = parseInt(textContainer.css("padding-left"));
     const paddingRight = parseInt(textContainer.css("padding-right"));
 
-    const isMobile = window.matchMedia("(max-width:768px").matches;
+    const isTablets = window.matchMedia("(max-width:768px)").matches;
+    // const isPhones = window.matchMedia("(max-width:480px)").matches;
 
-    if (isMobile) {
+    if (isTablets) {
 
-        reqItemWidth =  screenWidth - titlesWidth;
+        reqItemWidth = screenWidth - titlesWidth;
     } else {
-        reqItemWidth =  500;
+        reqItemWidth = 500;
     }
 
-return {
-    container: reqItemWidth,
-    textContainer: reqItemWidth - paddingRight - paddingLeft
-}
+    return {
+        container: reqItemWidth,
+        textContainer: reqItemWidth - paddingRight - paddingLeft
+    }
 
 };
 
@@ -30,17 +31,29 @@ const closeEveryItemInContainer = container => {
     const items = container.find(".products-menu__item");
     const content = container.find(".products-menu__content");
 
+    const isPhones = window.matchMedia("(max-width:480px)").matches;
+
+
+
     items.removeClass("active");
     content.width(0);
+
 }
+
+
+
+
 const openItemProd = item => {
     const hiddenContent = item.find(".products-menu__content");
     const reqWidth = mesureWidth(item);
-    const textBlock = item.find(".products-menu__container")
+    const textBlock = item.find(".products-menu__container");
+    const isPhones = window.matchMedia("(max-width:480px)").matches;
 
     item.addClass("active");
+
     hiddenContent.width(reqWidth.container);
     textBlock.width(reqWidth.textContainer);
+
 }
 
 
@@ -50,12 +63,36 @@ $('.products-menu__title').on("click", e => {
     const item = $this.closest(".products-menu__item");
     const itemOpened = item.hasClass("active");
     const container = $this.closest(".products-menu");
+
+
+
+
     if (itemOpened) {
         closeEveryItemInContainer(container);
-    } else {
+    }
+
+    else {
         closeEveryItemInContainer(container);
         openItemProd(item);
+
     }
 
 
 });
+
+// const itemsHide = itemOpened.siblings('.products-menu__item').css;
+
+
+// else {
+
+//     if(isPhones) {
+//         closeEveryItemInContainer(container);
+
+//         openItemProd(item);
+
+//     } else {
+
+//         closeEveryItemInContainer(container);
+//         openItemProd(item);
+//     }
+// }

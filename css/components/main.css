@@ -1971,7 +1971,7 @@ address {
 }
 @media screen and (max-width: 768px) {
   .products-menu__title {
-    width: 5rem;
+    width: 3.6111111111rem;
   }
 }
 .products-menu__text {
@@ -1986,6 +1986,11 @@ address {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
+@media screen and (max-width: 480px) {
+  .products-menu__text {
+    font-size: 2.2222222222rem;
+  }
+}
 .products-menu__content {
   position: relative;
   background: rgba(51, 53, 55, 0.9);
@@ -1997,6 +2002,16 @@ address {
 .products-menu__content-text {
   font-size: 0.8888888889rem;
 }
+@media screen and (max-width: 480px) {
+  .products-menu__content-text {
+    font-size: 0.7777777778rem;
+  }
+}
 .products-menu__container {
   padding: 2.2222222222rem 4.0555555556rem 2.5rem 1.4444444444rem;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__container {
+    padding: 1.6666666667rem 1.9444444444rem 2.5rem 1.4444444444rem;
+  }
 }
