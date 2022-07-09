@@ -10,7 +10,7 @@ sections.first().addClass("active");
 
 
 
-const countSectionPosition = sectionEq => {
+const countSectionPosition = (sectionEq) => {
     const position = sectionEq * -100;
 
     if (isNaN(position)) {
@@ -18,8 +18,10 @@ const countSectionPosition = sectionEq => {
         return 0 ;
 
     }
-}
-const changeMenuThemeForSection = sectionEq => {
+    return position;
+};
+
+const changeMenuThemeForSection = (sectionEq) => {
 
     const currentSection = sections.eq(sectionEq);
     const menuTheme = currentSection.attr("data-sidemenu-theme");
@@ -30,12 +32,11 @@ const changeMenuThemeForSection = sectionEq => {
     } else {
         sideMenu.removeClass(activeClass);
     }
-}
+};
 const resetActiveClassForItem = (items, itemEq, activeClass) => {
     items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
 }
-const performTransition = sectionEq => {
-
+const performTransition = (sectionEq) => {
     if (inScroll) return;
 
 
@@ -55,7 +56,7 @@ const performTransition = sectionEq => {
     });
 
 
-    resetActiveClassForItem(sections.sectionEq, 'active');
+    resetActiveClassForItem(sections, sectionEq, 'active');
 
 
     setTimeout(() => {
