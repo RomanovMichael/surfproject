@@ -539,7 +539,7 @@ img {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   cursor: pointer;
-  left: -4px;
+  left: 5px;
 }
 .sound.active::before {
   opacity: 1;
@@ -562,8 +562,8 @@ img {
       flex-shrink: 0;
   margin-right: 1.1111111111rem;
   cursor: pointer;
-  z-index: 2;
-  padding: 0;
+  z-index: 9999;
+  padding: 10px;
 }
 @media screen and (max-width: 768px) {
   .sound__btn {
