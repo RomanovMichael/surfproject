@@ -15,7 +15,7 @@ const countSectionPosition = (sectionEq) => {
 
     if (isNaN(position)) {
         console.error("передано неверное значение в countSectionPosition");
-        return 0 ;
+        return 0;
 
     }
     return position;
@@ -93,12 +93,12 @@ $(window).on("wheel", e => {
 
     if (deltaY > 0) {
         scroller.next();
-      
+
     }
 
     if (deltaY < 0) {
         scroller.prev();
-     
+
     }
 });
 
@@ -131,3 +131,22 @@ $("[data-scroll-to]").click(e => {
 
     performTransition(reqSection.index());
 });
+
+
+//https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+
+
+    $("body").swipe({
+        swipe: function (event, direction) {
+            const scroller = viewportScroller();
+            let scrollDirection = "";
+    
+            if (direction == "up") scrollDirection = "next";
+            if (direction == "down") scrollDirection = "prev";
+    
+        scroller[scrollDirection]();
+          
+        }
+    });
+
+
