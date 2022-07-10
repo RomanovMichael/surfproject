@@ -1363,9 +1363,8 @@ address {
   display: block;
   position: absolute;
   top: 35%;
-  width: 13px;
-  height: 27px;
   z-index: 9999;
+  padding: 20px;
 }
 .products-slider__arrow--direction--prev {
   left: 0;
