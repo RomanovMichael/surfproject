@@ -43,7 +43,7 @@ const performTransition = (sectionEq) => {
     if (inScroll) return;
 
 
-    const transitionOver = 500;
+    const transitionOver = 1000;
     const mouseInertiaOver = 300;
 
     inScroll = true;
