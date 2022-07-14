@@ -1,0 +1,55 @@
+$containerWidth: 940px;
+$baseFontsize: 18px;
+
+// breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+$smallscreen: 390px;
+$team: 942px;
+
+// colors
+$black: #292929;
+$body: #666666;
+
+//z-indexes
+$z-fixed-menu:100;
+
+
+
+//adaptive
+@import "media.scss";
+@import "layout";
+
+// components
+
+
+
+@import "hero";
+@import "header";
+@import "hamburger";
+@import "player-section";
+@import "features";
+@import "feature";
+@import "btn";
+@import "section";
+@import "headline";
+@import "benefits";
+@import "benefit";
+@import "reviews";
+@import "interactive-avatar";
+@import "order";
+@import "form";
+@import "radio";
+@import "fixed-menu";
+@import "map-section";
+@import "footer";
+@import "hamburger";
+@import "products";
+@import "product";
+@import "dropdown";
+@import "verticalmenu";
+@import "team";
+@import "team__player";
+@import "modal";
+@import "products-menu";
