@@ -1,17 +1,17 @@
 .hero {
-    background: url(../../img/bgs/herobg.png) center top  80% / cover  no-repeat;
+    background: url(./img/bgs/herobg.png) center top  80% / cover  no-repeat;
     background-color: #1968B1;
     color: #FFFFFF;
     height: 100%;
     min-height: 36.222rem;
    
     @include tablets {
-        background: url(../../img/bgs/herobg.png) right 10% bottom / cover no-repeat;
+        background: url(./img/bgs/herobg.png) right 10% bottom / cover no-repeat;
         background-color: #1968B1;
     }
 
     @include phones {
-        background: url(../../img/bgs/herobg.png) right 30% bottom / cover no-repeat;
+        background: url(./img/bgs/herobg.png) right 30% bottom / cover no-repeat;
         background-color: #1968B1;
     }
 }

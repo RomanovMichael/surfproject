@@ -60,7 +60,7 @@
         bottom: 0;
         right: 0;
         display: block;
-        background: url(../../img/player/splash.png) center center / cover no-repeat;
+        background: url(./img/player/splash.png) center center / cover no-repeat;
 
     }
 
@@ -110,7 +110,7 @@
         }
 
         &:before {
-            content: url(../../img/player/play.svg);
+            content: url(./img/player/play.svg);
             position: absolute;
             display: block;
             left: 0;
@@ -141,7 +141,7 @@
 
 
         &:before {
-            content: url(../../img/player/pause.svg);
+            content: url(./img/player/pause.svg);
             position: absolute;
             display: block;
             left: 0;

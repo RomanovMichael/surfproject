@@ -1,10 +1,10 @@
 .products-menu-section {
     position: relative;
     color: #ffff;
-    background: url(../../img/products-menu/mainslide.png) center center / cover no-repeat;
+    background: url(./img/products-menu/mainslide.png) center center / cover no-repeat;
 
     @include tablets {
-        background: url(../../img/products-menu/mainslide.png) right 35% center / cover no-repeat;
+        background: url(./img/products-menu/mainslide.png) right 35% center / cover no-repeat;
     }
     
 
