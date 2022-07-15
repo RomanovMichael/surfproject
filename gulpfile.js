@@ -92,7 +92,7 @@ task('scripts', () => {
 
 task("icons", () => {
     return src(`${SRC_PATH}/*.svg`)
-
+        .pipe(dest(DOCS_PATH))
         .pipe(dest('./dist'))
 });
 
@@ -102,7 +102,7 @@ task('server', () => {
         server: {
             baseDir: "./dist"
         },
-        open: false
+        //open: false
     });
 });
 
