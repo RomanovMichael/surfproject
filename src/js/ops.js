@@ -1,4 +1,3 @@
-
 (function () {
 
 
@@ -46,7 +45,7 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
     items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
 }
 const performTransition = (sectionEq) => {
-    if (inScroll) return;
+    if (inScroll || document.body.classList.contains('stop-scrolling')) return;
 
 
     const transitionOver = 1000;
@@ -134,7 +133,11 @@ $(window).on("keydown", e => {
 
 $(".wrapper").on("touchmove", e => e.preventDefault());
 
-$("[data-scroll-to]").click(e => {
+
+$(document).on('click', "[data-scroll-to]", e => {
+
+
+
     e.preventDefault();
 
     const $this = $(e.currentTarget);

@@ -33,7 +33,7 @@ $('.form').submit(e => {
 
 
     if (isValid) {
-
+        document.body.classList.add('stop-scrolling');
         const request = $.ajax({
             url: "https://webdev-api.loftschool.com/sendmail",
             method: "post",
@@ -72,6 +72,7 @@ $('.form').submit(e => {
 $('.app-submit-btn').click(e => {
     e.preventDefault();
     $.fancybox.close();
+    document.body.classList.remove('stop-scrolling');
 })  
 
 
